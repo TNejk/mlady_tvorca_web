@@ -8,7 +8,7 @@ def index():
 
 @app.route('/update', methods=['GET'])
 def update():
-    return None
+    return render_template('index.html')
 
 if __name__ == '__main__':
   app.run(debug=True, use_reloader=True)

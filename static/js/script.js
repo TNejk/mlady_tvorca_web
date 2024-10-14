@@ -3,7 +3,7 @@ let num = 0;
 let values = [];
 function getLatestData(){
   let tempData;
-  fetch('/update')
+  fetch('http://193.87.144.172:6789/get/data/all')
     .then(response => response.json())
     .then(data => {
       const msgDiv = document.getElementById('raw_data');
